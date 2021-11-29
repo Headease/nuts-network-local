@@ -6,4 +6,8 @@ http:
       origin: "*"
 verbosity: debug
 network:
-  enabletls: false
+  truststorefile: /opt/nuts/ssl/ca.pem
+  certfile: /opt/nuts/ssl/node.nuts.local.pem
+  certkeyfile: /opt/nuts/ssl/node.nuts.local.key
+  bootstrapnodes:
+    - "nuts.reinkrul.nl:5555"
